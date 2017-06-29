@@ -16,11 +16,11 @@ export default class MovieService{
      * @param {*可选参数：Vue根实例的$http} vrobj 
      */
     static GetMovieList(movietype,parmas,vrobj=null){
-        // let _url=`${this.serverUrl}/movie/${movietype}/getlist`;
-        // return HttpHelper.Get(_url,parmas,vrobj);
+        let _url=`${this.serverUrl}/movie/${movietype}/getlist`;
+        return HttpHelper.Get(_url,parmas,vrobj);
 
-        let _url=`${this.doubanApi}/${movietype}`;
-        return HttpHelper.Jsonp(_url,parmas,vrobj);
+        // let _url=`${this.doubanApi}/${movietype}`;
+        // return HttpHelper.Jsonp(_url,parmas,vrobj);
 
         // let _url=`https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su`;
         // return HttpHelper.Jsonp(_url,{wd:'link'},'cb',vrobj);

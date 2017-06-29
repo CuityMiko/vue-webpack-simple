@@ -22,6 +22,9 @@
 <script>
 // 引入面包屑
 import breadcrumbComponent from '../components/breadcrumbComponent.vue'
+import MovieService from '../services/MovieService.js'
+import httpHelper from '../js/commons/httpHelper.js'
+
 export default {
     data(){
         return{
@@ -38,9 +41,21 @@ export default {
         'breadcrumb':breadcrumbComponent
     },
     mounted(){
-        console.log(this.$route.params.id);
-        console.log(this.$route.query.name)
-    }
+        let _movietype="coming_soon";
+        let _params={
+            start:0,
+            count:7,
+            city:'杭州',
+            q:''
+        }
+        MovieService.GetMovieList(_movietype,_params,this.$http).then((data)=>{
+            console.log(data);
+        },(err)=>{
+            console.log(err);
+        }).catch((err)=>{
+            console.log(err);
+        })
+    },
 }
 </script>
 
