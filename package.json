@@ -1,0 +1,52 @@
+{
+  "name": "vue_webpack_simple_pro",
+  "description": "A Vue.js project",
+  "version": "1.0.0",
+  "author": "CuityMiko <15201776956@163.com>",
+  "private": true,
+  "scripts": {
+    "preinstall": "bower install",
+    "predev": "npm install",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot --port 8090",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "dependencies": {
+    "vue": "^2.3.3",
+    "vue-router": "^2.6.0"
+  },
+  "devDependencies": {
+    "axios": "^0.16.2",
+    "babel": "~6.5.2",
+    "babel-core": "^6.0.0",
+    "babel-eslint": "~6.1.2",
+    "babel-loader": "~6.2.5",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-component": "^0.9.1",
+    "babel-plugin-import": "^1.1.0",
+    "babel-plugin-transform-object-assign": "^6.8.0",
+    "babel-plugin-transform-object-rest-spread": "~6.6.5",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-es2015": "~6.14.0",
+    "babel-preset-es2015-loose": "~7.0.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "babel-preset-stage-1": "^6.16.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "babel-preset-stage-3": "^6.17.0",
+    "babel-preset-vue-app": "^1.2.0",
+    "cross-env": "^3.0.0",
+    "css-loader": "^0.28.4",
+    "element-theme": "^0.7.2",
+    "element-ui": "^1.3.7",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "fetch-jsonp": "^1.1.1",
+    "file-loader": "^0.9.0",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^5.0.1",
+    "style-loader": "^0.18.2",
+    "vue-loader": "^12.1.0",
+    "vue-resource": "^1.3.4",
+    "vue-template-compiler": "^2.3.3",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
