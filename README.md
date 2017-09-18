@@ -46,4 +46,8 @@ Vue.use(ElementUI)
 import './bower_components/animate.css/animate.css'
 ```
 
+### 引入easy-mock快速生成api请求接口
++ 1. 安装：npm install -g easy-mock-cli
++ 2. 生成：easymock init
+
 

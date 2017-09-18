@@ -29,7 +29,8 @@ router.afterEach((to, from) => {
 // 引入Element-ui
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
-Vue.use(ElementUI)
+import locale from 'element-ui/lib/locale/lang/en'
+Vue.use(ElementUI, { locale })
 
 // 引入animate.css作为切换动画
 import './bower_components/animate.css/animate.css'

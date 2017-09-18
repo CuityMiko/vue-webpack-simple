@@ -7,7 +7,7 @@
   "scripts": {
     "preinstall": "bower install",
     "predev": "npm install",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot --port 8090",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot --port 9002",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {

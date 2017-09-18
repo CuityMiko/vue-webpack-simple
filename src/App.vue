@@ -35,12 +35,18 @@
 </template>
 
 <script>
+    import * as demo from './api/demo/'
     export default{
         data(){
             return {
                 msg:'vue-webpack-simple-pro',
                 activeIndex:'1'
             }
+        },
+        mounted(){
+            demo.getdata_get({}).then((res)=>{
+                console.log(res)
+            })
         }
     }
 </script>
