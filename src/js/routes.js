@@ -10,6 +10,8 @@ const MovieContainer = r => require.ensure([], () => r(require('../containers/Mo
 const MovieDetailContainer = r => require.ensure([], () => r(require('../containers/MovieDetailContainer.vue')), 'moviedetail')
 // 关于页
 const AboutContainer = r => require.ensure([], () => r(require('../containers/AboutContainer.vue')), 'about')
+// Mock
+const MockContainer = r => require.ensure([], () => r(require('../containers/MockContainer.vue')), 'mock')
 // 404页
 const NoFindContainer = r => require.ensure([], () => r(require('../containers/NoFindContainer.vue')), '404')
 
@@ -21,6 +23,10 @@ export default[
     {
         path:'/movie',
         component:MovieContainer
+    },
+    {
+        path:'/mock',
+        component:MockContainer
     },
     {path:'/movie/detail/:id',component:MovieDetailContainer}, 
     // {
