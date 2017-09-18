@@ -2,6 +2,16 @@ import axios from 'axios';
 
 const instance = axios.create();
 
+// request拦截器
+instance.interceptors.request.use(config => {
+  config.headers['Content-Type'] = 'application/x-www-form-urlencoded';
+  return config
+}, error => {
+  // Do something with request error
+  console.log(error) // for debug
+  Promise.reject(error)
+})
+
 function createAPI(baseURL) {
   return function (conf) {
     conf = conf || {};

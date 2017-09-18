@@ -45,9 +45,9 @@
             }
         },
         mounted(){
-            demo.getdata_get({}).then((res)=>{
-                console.log(res)
-            })
+            // demo.getdata_get({}).then((res)=>{
+            //     console.log(res)
+            // })
         }
     }
 </script>
