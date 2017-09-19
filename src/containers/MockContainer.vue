@@ -1,5 +1,5 @@
 <style scoped>
-
+    
 </style>
 
 <template>
@@ -43,26 +43,26 @@
         mounted(){
             this.now=Mock.mock("@now");
             this.imgurl=Mock.Random.image('200x100', '#50B347', '#FFF', 'Mock.js')
-            // demo.getpage_post({ pageindex:2,pagesize:20 }).then((res)=>{
-            //     console.log(res);
-            // })
-            let _url=`http://www.easy-mock.com/mock/59bce026e0dc663341ac6dad/cstore/getpage`;
-            fetch(_url, {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/x-www-form-urlencoded"
-                },
-                body: `pageindex=2&pagesize=20`
-                // body:{ pageindex:2, pagesize:20 }
-            }).then(function(res) {
-                if (res.ok) {
-                    return res.json();
-                }
-            }).then((data)=>{
-                console.log(data)
-            }).catch((err)=>{
-                console.log(err);
+            demo.getpage_post({ pageindex:2,pagesize:20 }).then((res)=>{
+                console.log(res);
             })
+            // let _url=`http://www.easy-mock.com/mock/59bce026e0dc663341ac6dad/cstore/getpage`;
+            // fetch(_url, {
+            //     method: "POST",
+            //     headers: {
+            //         "Content-Type": "application/x-www-form-urlencoded"
+            //     },
+            //     body: `pageindex=2&pagesize=20`
+            //     // body:{ pageindex:2, pagesize:20 }
+            // }).then(function(res) {
+            //     if (res.ok) {
+            //         return res.json();
+            //     }
+            // }).then((data)=>{
+            //     console.log(data)
+            // }).catch((err)=>{
+            //     console.log(err);
+            // })
         },
         methods:{
             changem1(){
