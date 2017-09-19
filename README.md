@@ -50,4 +50,7 @@ import './bower_components/animate.css/animate.css'
 + 1. 安装：npm install -g easy-mock-cli
 + 2. 生成：easymock init
 
+### promise.prototype.finally 可以使promise方法增加finally函数
++ 1. require('promise.prototype.finally').shim()
+
 
